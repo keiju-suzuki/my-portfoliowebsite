@@ -71,7 +71,7 @@ li {
 }
 
 .inner {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 40px;
   
@@ -185,7 +185,7 @@ li {
  メインビジュアル
 ---------------------------------*/
 .main-visual-img {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     height: 200px;
     background-image: url(../img/header.jpg);
@@ -278,7 +278,7 @@ li {
 }
 
 .article-inner {
-  max-width: 1040px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -300,7 +300,7 @@ li {
 } */
 
 .article-body {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -476,7 +476,7 @@ li {
 }
 
 .article-inner {
-  max-width: 1020px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -545,8 +545,73 @@ li {
   border: 1px solid #838b9a;
 }
 
+/* ここからカグクロ*/
+/* ----------------------------------
+  制作・実務イメージ 2列グリッドレイアウト
+---------------------------------- */
+.work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px; 
+  margin-top: 20px;
+}
 
+.work-grid-item {
+  width: calc(50% - 10px); 
+  box-sizing: border-box;
+}
 
+.img-container {
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #838b9a;
+  background-color: #f5f5f5;
+  margin-bottom: 0px;
+  aspect-ratio:  15/10;
+}
+
+.img-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* タイトルとリンクの設定 */
+.work-grid-title {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.work-grid-title a {
+  color: #333333; 
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 画像を包む枠の設定 */
+.works-img {
+  width: 100%;
+  aspect-ratio: 4 / 3; 
+  overflow: hidden;
+  border-radius: 4px; 
+  border: 1px solid #e0e0e0; 
+  margin-bottom: 12px;
+}
+
+/* 枠内の画像の設定 */
+.works-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
 
 /*media Queries 767
 ----------------------------------------------------*/
